@@ -43,11 +43,12 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          {/* go to logo.com to create your own */}
+          {/* created my own logo*/}
+          
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
-            Adrian &nbsp;
-            <span className="sm:block hidden"> | JavaScript Mastery AQ Mariam Ostatishvili</span>
+            Mariam &nbsp;
+            <span className="sm:block hidden"> | Ostatishvili</span>
           </p>
         </Link>
 
