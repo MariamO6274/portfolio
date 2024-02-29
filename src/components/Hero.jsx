@@ -31,9 +31,11 @@ const Hero = () => {
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
+          {/* mouse kind of scrol elips */}
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{
+                // we want to move it 24px up and down
                 y: [0, 24, 0],
               }}
               transition={{
@@ -41,6 +43,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
+              // lit circle inside, that jumps up n down
               className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
           </div>
