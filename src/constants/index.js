@@ -23,6 +23,10 @@ import {
   jobit,
   tripguide,
   threejs,
+  tcl,
+  treespond,
+  chase,
+  oxynLogo,
 } from "../assets";
 
 export const navLinks = [
@@ -61,6 +65,7 @@ const services = [
   },
 ];
 
+// if u add more will have more balls
 const technologies = [
   {
     name: "HTML 5",
@@ -114,14 +119,16 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+ 
 ];
 
 const experiences = [
   {
+    // change icon bgs from here
     title: " Front End / UI Developer",
     company_name: "Oxyn.io",
-    icon: starbucks,
-    iconBg: "#383E56",
+    icon: oxynLogo,
+    iconBg: "#FFFFFF",
     date: "April 2020 - present",
     points: [
       "Involved in client-side development by leveraging React with Typescript; interacting with AXIOS based RESTful APIs.",
@@ -134,8 +141,8 @@ const experiences = [
   {
     title: "Front End Developer",
     company_name: "Tick-Click LLC",
-    icon: tesla,
-    iconBg: "#E6DEDD",
+    icon: tcl,
+    iconBg: "#0769E0",
     date: "December 2022 - February 2023",
     points: [
       "Actively involved in all aspects of the system design. Understanding of application development lifecycle methodologies.",
@@ -148,8 +155,8 @@ const experiences = [
   {
     title: "Front End / UI Developer",
     company_name: "Treespond",
-    icon: shopify,
-    iconBg: "#383E56",
+    icon: treespond,
+    iconBg: "#FFFFFF",
     date: "August 2017 - April 2020",
     points: [
       "Worked extensively on design and development of UX, UI, IA, HTML, CSS, ReactJS.",
@@ -162,8 +169,8 @@ const experiences = [
   {
     title: "UI Developer / Consultant",
     company_name: "JPMorgan Chase",
-    icon: meta,
-    iconBg: "#E6DEDD",
+    icon: chase,
+    iconBg: "#094878",
     date: "September 2015 - August 2017",
     points: [
       "Implemented and designed user interface for web based customer application.",

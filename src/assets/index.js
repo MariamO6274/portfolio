@@ -25,6 +25,11 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import tcl from "./company/tcl.jpg";
+import treespond from "./company/treespond.png";
+import chase from "./company/chase.jpeg";
+import oxynLogo from "./company/oxynLogo.jpeg";
+
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -59,4 +64,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  tcl,
+  treespond,
+  chase,
+  oxynLogo,
 };
