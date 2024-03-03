@@ -209,6 +209,7 @@ const testimonials = [
   },
 ];
 
+// here are some projects built by me, need to be change, add git urls
 const projects = [
   {
     name: "Car Rent",
@@ -253,7 +254,7 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "3 Trip Guide",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -271,7 +272,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://google.com/",
   },
 ];
 
