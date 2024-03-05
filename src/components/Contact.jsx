@@ -7,6 +7,8 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -31,23 +33,34 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    // we pass these here
+    // public kye ----> xYsjQe9Fj6n1ZQkrZ
+    // template_b7as93b
+    // service ID ----> service_ze0fwua 
+
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        "service_ze0fwua",
+        "template_b7as93b",
+        //  import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        //  import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Mariam",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "mariamo6274@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        // import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        "xYsjQe9Fj6n1ZQkrZ"
       )
+      // this is what's gonna happend when it executes
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          alert(
+            "Thank you! your message was sent successfully! I will get back to you shortly."
+          );
 
           setForm({
             name: "",
@@ -134,3 +147,9 @@ const Contact = () => {
 };
 
 export default SectionWrapper(Contact, "contact");
+
+
+
+// EMAILJS
+// https://dashboard.emailjs.com/admin/account
+// mariamo6274@gmail.com
